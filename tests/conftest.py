@@ -23,10 +23,4 @@ def client(database_path: Path) -> Iterator[TestClient]:
 @pytest.fixture
 def car_payload() -> dict:
     return {"make": "Toyota", "model": "Corolla", "year": 2024, "color": "Silver"}
-def pytest_addoption(parser):
-    parser.addoption(
-        "--headed",
-        action="store_true",
-        default=False,
-        help="Run e2e browser tests in headed mode (not headless).",
-    )
+
