@@ -8,8 +8,8 @@ def test_car_text_fields_are_trimmed():
      year=2020,
      color=" Red ",
  )
- # assert car.make == "Mazda"
- assert car.make == "Honda"  # deliberately wrong
+ assert car.make == "Mazda"
+ # assert car.make == "Honda"  # deliberately wrong
  assert car.model == "MX-5"
  assert car.color == "Red"
 
