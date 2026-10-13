@@ -23,3 +23,4 @@ def client(database_path: Path) -> Iterator[TestClient]:
 @pytest.fixture
 def car_payload() -> dict:
     return {"make": "Toyota", "model": "Corolla", "year": 2024, "color": "Silver"}
+
